@@ -1,0 +1,24 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  justify-content: flex-end;
+}
+.navbar {
+  padding: 2rem 0 2em 1rem;
+}
+.navbar span {
+  color: #ee252f;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+  background-color: #f8df1f;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #050500;
+}
