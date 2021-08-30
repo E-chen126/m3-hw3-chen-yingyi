@@ -10,9 +10,6 @@ body {
 .navbar > .container-xxl {
   justify-content: flex-end;
 }
-.navbar {
-  padding: 2rem 0 2em 1rem;
-}
 .navbar span {
   color: #ee252f;
 }
@@ -21,4 +18,40 @@ nav.navbar.navbar-expand-lg.navbar-light {
 }
 .navbar-light .navbar-nav .nav-link {
   color: #050500;
+}
+.fontOne {
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.banner {
+  background: url("../img/banner-bg.png");
+  background-size: cover;
+  background-position-x: center;
+}
+.banner img {
+  display: block;
+  width: 64%;
+  margin: auto;
+  padding-top: 38px;
+}
+.banner button {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #f8df1f;
+  border: none;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media (min-width: 766px) {
+  .banner img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 69px;
+  }
 }

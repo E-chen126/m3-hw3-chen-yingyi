@@ -20,7 +20,6 @@ body {
 }
 
 .navbar {
-  padding: 2rem 0 2em 1rem;
   span {
     color: @secondary-color;
   }
@@ -32,4 +31,40 @@ nav.navbar.navbar-expand-lg.navbar-light {
 
 .navbar-light .navbar-nav .nav-link {
   color: @text-color;
+}
+
+.fontOne {
+  font-size: 18px;
+  color: @text-color;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.banner {
+  background: url("../img/banner-bg.png");
+  background-size: cover;
+  background-position-x: center;
+  img {
+    display: block;
+    width: 64%;
+    margin: auto;
+    padding-top: 38px;
+  }
+  button {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    background-color: @primary-color;
+    border: none;
+    .fontOne;
+  }
+}
+
+@media (min-width: 766px) {
+  .banner img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 69px;
+  }
 }
