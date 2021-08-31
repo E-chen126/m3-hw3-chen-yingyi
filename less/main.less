@@ -38,6 +38,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
 }
 
 .banner {
+  position: relative;
   background: url("../img/banner-bg.png");
   background-size: cover;
   background-position-x: center;
@@ -46,15 +47,27 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: 64%;
     margin: auto;
     padding-top: 38px;
+    position: relative;
   }
   button {
     display: block;
+    position: relative;
     margin: auto;
     border-radius: 8px;
     background-color: @primary-color;
     border: none;
     .button_font;
   }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(59, 56, 56, 0.33);
 }
 
 .intro {
