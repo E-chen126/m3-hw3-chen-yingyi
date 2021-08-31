@@ -9,16 +9,6 @@ body {
   font-family: @font-family;
 }
 
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  justify-content: flex-end;
-}
-
 .navbar {
   span {
     color: @secondary-color;
@@ -33,7 +23,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
   color: @text-color;
 }
 
-.fontOne {
+.button_font {
   font-size: 18px;
   color: @text-color;
   font-weight: 500;
@@ -56,8 +46,15 @@ nav.navbar.navbar-expand-lg.navbar-light {
     border-radius: 8px;
     background-color: @primary-color;
     border: none;
-    .fontOne;
+    .button_font;
   }
+}
+
+.intro button {
+  border-radius: 8px;
+  background-color: @primary-color;
+  border: none;
+  .button_font;
 }
 
 @media (min-width: 766px) {
@@ -66,5 +63,16 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: 50%;
     margin: auto;
     padding-top: 69px;
+  }
+}
+
+@media (min-width: 990px) {
+  .intro {
+    div {
+      max-width: 65%;
+    }
+    img {
+      max-width: 200px;
+    }
   }
 }

@@ -1,15 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  justify-content: flex-end;
-}
 .navbar span {
   color: #ee252f;
 }
@@ -19,7 +10,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
 .navbar-light .navbar-nav .nav-link {
   color: #050500;
 }
-.fontOne {
+.button_font {
   font-size: 18px;
   color: #050500;
   font-weight: 500;
@@ -47,11 +38,28 @@ nav.navbar.navbar-expand-lg.navbar-light {
   font-weight: 500;
   text-transform: uppercase;
 }
+.intro button {
+  border-radius: 8px;
+  background-color: #f8df1f;
+  border: none;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 @media (min-width: 766px) {
   .banner img {
     display: block;
     width: 50%;
     margin: auto;
     padding-top: 69px;
+  }
+}
+@media (min-width: 990px) {
+  .intro div {
+    max-width: 65%;
+  }
+  .intro img {
+    max-width: 200px;
   }
 }
