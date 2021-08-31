@@ -30,6 +30,13 @@ nav.navbar.navbar-expand-lg.navbar-light {
   text-transform: uppercase;
 }
 
+.heading-span {
+  font-size: 30px;
+  color: @secondary-color;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .banner {
   background: url("../img/banner-bg.png");
   background-size: cover;
@@ -50,11 +57,28 @@ nav.navbar.navbar-expand-lg.navbar-light {
   }
 }
 
-.intro button {
-  border-radius: 8px;
-  background-color: @primary-color;
-  border: none;
-  .button_font;
+.intro {
+  button {
+    border-radius: 8px;
+    background-color: @primary-color;
+    border: none;
+    .button_font;
+  }
+  span {
+    .heading-span;
+  }
+}
+
+.info {
+  background: #f3f3f3;
+}
+
+footer {
+  background: #080801;
+  border-top: #f8df1f solid 0.7rem;
+  img {
+    width: 40%;
+  }
 }
 
 @media (min-width: 766px) {
@@ -73,6 +97,11 @@ nav.navbar.navbar-expand-lg.navbar-light {
     }
     img {
       max-width: 200px;
+    }
+  }
+  .infor {
+    img {
+      max-width: 180px;
     }
   }
 }
